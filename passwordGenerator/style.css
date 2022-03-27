@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 1200px;
+    height: 100vh;
+    background: #3b5261;
+    background: linear-gradient(150deg, rgba(59,82,97,1) 33%, rgba(91,106,111,1) 67%);
+}
+
+#generator-container {
+    width: 500px;
+    height: 92%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border:none;
+    border-radius: 10px;
+    border: 2px solid #3b52617c;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    
+    background-color: #3d4e599d;
+}
+
+h1 {
+    margin: 3% 0 2% 0;
+    font-size: 2.7em;
+    font-weight: 500;
+    text-align: center;
+}
+
+.password.display {
+    margin: 3% 10%;
+    width: 80%;
+    height: 100px;
+    padding: 8px;
+    
+    background-color: #38434bc5;
+    border: 2px solid #33c4c270;
+    border-radius: 2px;
+    font-size: 1.35em;
+    color: rgb(206, 206, 206);
+}
+
+#copy-password {
+    position: absolute;
+    margin-top: 11.5%;
+    margin-left: 51%;
+
+    font-size: 0.85em;
+    color: #33c4c29a;
+}
+
+#copy-password:hover {
+    cursor: pointer;
+}
+
+#copy-password:active {
+    color: rgb(206, 206, 206);
+}
+
+#password-coppied {
+    position: absolute;
+    margin-top: 11.5%;
+    margin-left: 45%;
+
+    font-size: 0.85em;
+    color: #35cecb62;
+}
+
+.password.displayPass {
+    margin: 0;
+    position: absolute;
+    width: 76%;
+
+    display: inline;
+    overflow-wrap: break-word;
+}
+
+#generate-btn {
+    width: 80%;
+    height: 8%;
+    margin: 4% 10%;
+
+    font-size: 1.8em;
+    color: rgb(224, 224, 224);
+    background-color: #12807e;
+    
+    border: none;
+    border-radius: 5px;
+}
+
+#generate-btn:hover {
+    color: rgb(224, 224, 224);
+    background-color: #33c4c2a1;
+    border: 2px outset #33c4c1;
+    cursor: pointer;
+}
+
+#generate-btn:active {
+    border: 2px inset #33c4c1;
+}
+
+#settings {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    font-size: 1.6em;
+}
+
+#length {
+    display: block;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+#length > div {
+    height: 50px;
+    background-color: #38434bc5;
+    border-radius: 3px;
+    font-size: 1.4em;
+    text-align: center;
+    padding-top: 3%;
+}
+
+#length input {
+    display: inline;
+    width: 75%;
+}
+
+#settings div {
+    margin: 4px;
+    margin-left: 10%;
+    padding: 10px 0 0 16px;
+    width: 80%;
+    height: 50px;
+
+    background-color: #38434bc5;
+    border-radius: 3px;
+}
+
+.password.length {
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+}
+
+#settings h3 {
+    margin: 0;
+    margin-left: 10%;
+    font-size: 20px;
+    font-weight: normal;
+    }
+
+input[type='checkbox'] {
+    float: right;
+    width: 18px;
+    height: 18px;
+    margin-right: 5%;
+}
